@@ -3,5 +3,9 @@ from . import views
 app_name = "recipes"
 
 urlpatterns = [
-    path("", views.home, name="home")
+    path("", views.home, name="home"),
+    path("recipes/", views.recipes, name="recipes"),
+    path('map/', views.map_view, name='map_view')
 ]
+
+
